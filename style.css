@@ -1,0 +1,141 @@
+/* Mobile-first: Styles par défaut pour les petits écrans (smartphones) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 5vh;
+}
+
+nav {
+    display: flex;
+    background-color: #007BFF;
+    width: 100vw;
+    height: 14vh;
+    justify-content: space-between;
+}
+
+.img-nav {
+    width:45px;
+    aspect-ratio: 1/1;
+}
+
+.nav-contact {
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-nav-courrier {
+    width: 45px;
+}
+
+footer {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #8d8d8d;
+    padding: 20px;
+    color: #dedede;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.section-title {
+    font-size: 20px;
+    color: #333;
+    border-bottom: 2px solid #007BFF;
+    margin-bottom: 10px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list li {
+    margin-bottom: 10px;
+}
+
+.list li span {
+    font-weight: bold;
+}
+
+.contact-info p, .skills p, .languages p {
+    margin: 5px 0;
+}
+
+/* Responsive Design: Tablettes et plus grands écrans */
+@media (min-width: 375px) {
+    .container {
+        width: 80%;
+    }
+
+    footer {
+        width: 80%;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .section {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 70%;
+    }
+
+    footer {
+        width: 70%;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    header p {
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .list li {
+        font-size: 16px;
+    }
+}
