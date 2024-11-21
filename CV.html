@@ -6,17 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon CV</title>
     <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=phone_iphone" />
 </head>
 
 <body>
 
     <!-- Barre de Nav-->
     <nav>
-        <div class="nav-contact"><a href=""><img class="img-nav-courrier" src="Courrier.png" alt="Courrier"></a>
-            <div>Courriel</div>
+        <div class="nav-element">
+            <a href="#profil">Profil</a>
         </div>
-        <div class="nav-contact"><a href=""><img class="img-nav" src="Téléphone.png" alt="Téléphone"></a>
-            <div>Téléphone</div>
+        <div class="nav-element">
+            <a href="#formations">Formations</a>
+        </div>
+        <div class="nav-element">
+            <a href="#skills">Compétences</a>
+        </div>
+        <div class="nav-element">
+            <a href="#langues">Langues</a>
+        </div>
+        <div class="nav-element">
+            <a href="#loisirs">Loisirs</a>
         </div>
 
     </nav>
@@ -27,83 +38,94 @@
         <header>
             <h1>Humez Clément </h1>
         </header>
+        <div class="main-content">
+            <div class="infos">
+                <!-- Profil -->
+                <div id="profil" class="section">
+                    <h2 class="section-title">Profil</h2>
+                    <ul class="list">
+                        <li>Mobilité : Véhiculé (Permis B)</li>
+                    </ul>
+                </div>
 
-        <!-- Profil -->
-        <div class="section">
-            <h2 class="section-title">Profil</h2>
-            <ul class="list">
-                <li>Mobilité : Véhiculé (Permis B)</li>
-            </ul>
-        </div>
-        <!-- Formation -->
-        <div class="section">
-            <h2 class="section-title">Formations</h2>
-            <ul class="list">
-                <li>
-                    <span> - Première année de Bachelor | LaManu Compiègne</span> (2024 - 2027)
-                    <p>· Design</p>
-                    <p>· Développement web</p>
-                    <span> - Baccalauréat Général Spécialités Maths/NSI | Lycée Charles de Gaulle Compiègne</span> (2023
-                    - 2024)
-                    <p> · Mention assez bien</p>
-                    <p>· Option Sport</p>
-                    <p>· Spécialités Maths/NSI</p>
-                    <span> - Brevet des collèges </span> (2020 - 2021)
-                </li>
-            </ul>
-        </div>
+                <!-- Formation -->
+                <div id="formations" class="section">
+                    <h2 class="section-title">Formations</h2>
+                    <ul class="list">
+                        <li>
+                            <span>Première année de Bachelor | LaManu Compiègne</span> (2024 - 2027)
+                            <ul>
+                                <li>Design</li>
+                                <li>Développement web</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Baccalauréat Général Spécialités Maths/NSI | Lycée Charles de Gaulle Compiègne</span>
+                            (2023
+                            - 2024)
+                            <ul>
+                                <li>Mention assez bien</li>
+                                <li>Option Sport</li>
+                                <li>Spécialités Maths/NSI</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Brevet des collèges </span> (2020 - 2021)
+                        </li>
+                    </ul>
+                </div>
 
-        <!-- Compétences -->
-        <div class="section skills">
-            <h2 class="section-title">Compétences</h2>
-            <ul class="list">
-                <li> - HTML5</li>
-                <li> - CSS3</li>
-                <li> - JavaScript</li>
-                <li> - Python </li>
-                <li> - Git, GitHub</li>
-            </ul>
-        </div>
+                <!-- Compétences -->
+                <div id="skills">
+                    <h2 class="section-title">Compétences</h2>
+                    <ul class="list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Python </li>
+                        <li>Git, GitHub</li>
+                    </ul>
+                </div>
 
-        <!-- Langues -->
-        <div class="section languages">
-            <h2 class="section-title">Langues</h2>
-            <p><strong>Français:</strong> Langue maternelle</p>
-            <p><strong>Anglais:</strong> Courant, Niveau B1-B2 </p>
-        </div>
+                <!-- Langues -->
+                <div id="langues" class="section languages">
+                    <h2 class="section-title">Langues</h2>
+                    <p><strong>Français:</strong> Langue maternelle</p>
+                    <p><strong>Anglais:</strong> Courant, Niveau B1-B2 </p>
+                </div>
 
-        <!-- Loisirs -->
-        <div class="section">
-            <h2 class="section-title">Loisirs</h2>
-            <p>Passions : </p>
-            <ul>
-                <li>
-                    Sport
-                </li>
-                <li>
-                    Voyages
-                </li>
-                <li>
-                    Découvertes
-                </li>
-                <li>
-                    Jeux vidéos
-                </li>
-            </ul>
+                <!-- Loisirs -->
+                <div id="loisirs" class="section">
+                    <h2 class="section-title">Loisirs</h2>
+                    <p>Passions : </p>
+                    <ul>
+                        <li>
+                            Sport
+                        </li>
+                        <li>
+                            Voyages
+                        </li>
+                        <li>
+                            Découvertes
+                        </li>
+                        <li>
+                            Jeux vidéos
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="contact">
+                <h2 class="section-title">Coordonnées</h2>
+                <a href="mailto:humez.clement@gmail.com"><img class="icone-mail" src="Img/courrier.svg" alt="icone-mail">
+                    humez.clement@gmail.com</a>
+                <a href="tel:0631417570"><img class="icone-telephone" src="Img/telephone.svg" alt="icone-telephone"> +33 6 31 41
+                    75 70</a>
+                <p><span>Adresse:</span> 60190 Remy, France</p>
+            </div>
         </div>
 
     </div>
-
 </body>
-
-<footer>
-    <!-- Contact Information -->
-    <div class="section contact-info">
-        <h2 class="section-title">Coordonnées</h2>
-        <p><span>Email:</span> humez.clement@gmail.com</p>
-        <p><span>Téléphone:</span> +33 6 31 41 75 70</p>
-        <p><span>Adresse:</span>60190 Remy, France</p>
-    </div>
-</footer>
 
 </html>
