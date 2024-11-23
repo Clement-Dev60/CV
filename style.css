@@ -14,6 +14,26 @@ body {
     grid-row-gap: 0px; 
 }*/
 
+#profil {
+    scroll-margin-top: 14vh;
+}
+
+#formations {
+    scroll-margin-top: 14vh;
+}
+
+#skills {
+    scroll-margin-top: 14vh;
+}
+
+#langues {
+    scroll-margin-top: 14vh;
+}
+
+#loisirs {
+    scroll-margin-top: 14vh;
+}
+
 .contact {
     width: auto;
 }
