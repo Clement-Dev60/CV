@@ -1,182 +1,165 @@
 /* Mobile-first: Styles par défaut pour les petits écrans (smartphones) */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;  /* Définit la police de base à Arial, sans-serif en secours. */
+    margin: 0;  /* Supprime les marges par défaut du body. */
+    padding: 0;  /* Supprime les paddings par défaut du body. */
+    background-color: #f4f4f9;  /* Définit un fond clair pour la page. */
 }
 
-/*.main-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; 
-}*/
-
-#profil {
-    scroll-margin-top: 14vh;
+/* Définition de la marge de défilement pour les sections */
+#profil, #formations, #skills, #langues, #loisirs {
+    scroll-margin-top: 14vh;  /* Ajoute une marge de défilement de 14% de la hauteur de la fenêtre pour ces éléments. */
 }
 
-#formations {
-    scroll-margin-top: 14vh;
-}
-
-#skills {
-    scroll-margin-top: 14vh;
-}
-
-#langues {
-    scroll-margin-top: 14vh;
-}
-
-#loisirs {
-    scroll-margin-top: 14vh;
-}
-
+/* Style de la section de contact */
 .contact {
-    width: auto;
+    width: auto;  /* La largeur de la section 'contact' s'ajuste automatiquement. */
 }
 
 .contact a {
-    display: block;
+    display: block;  /* Les liens dans '.contact' seront affichés comme des blocs, facilitant leur mise en forme. */
 }
 
+/* Container central pour le contenu principal */
 .container {
-    display: grid;
-    width: 90%;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 14vh;
+    display: grid;  /* Utilisation du système de grid pour organiser les éléments. */
+    width: 90%;  /* La largeur du conteneur sera de 90% de l'écran. */
+    margin: 0 auto;  /* Centrer le conteneur horizontalement. */
+    background-color: #ffffff;  /* Fond blanc pour le conteneur. */
+    padding: 20px;  /* Ajout de padding de 20px autour du contenu. */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Ombre légère autour du conteneur. */
+    margin-top: 14vh;  /* Ajout d'une marge en haut de 14% de la hauteur de la fenêtre pour espacer le contenu du haut. */
 }
 
+/* Style de la navigation */
 nav {
-    display: flex;
-    position: sticky;
-    top: 0;
-    background-color: #003064;
-    width: 100%;
-    height: 14vh;
-    justify-content: center;
-    gap: 5%;
-    align-items: center;
+    display: flex;  /* Utilisation de Flexbox pour la navigation, afin d'aligner les éléments en ligne. */
+    position: sticky;  /* Fixe la navigation en haut lors du défilement. */
+    top: 0;  /* La navigation restera collée en haut de la fenêtre. */
+    background-color: #003064;  /* Fond bleu foncé pour la barre de navigation. */
+    width: 100%;  /* La largeur de la navigation est de 100% de l'écran. */
+    height: 14vh;  /* La hauteur de la navigation est de 14% de la hauteur de la fenêtre. */
+    justify-content: center;  /* Centre les éléments de navigation horizontalement. */
+    gap: 5%;  /* Espace de 5% entre chaque élément de navigation. */
+    align-items: center;  /* Centre verticalement les éléments de la barre de navigation. */
 }
 
+/* Style des éléments de navigation */
 .nav-element {
-    font-size: small;
+    font-size: small;  /* Police plus petite pour les éléments de navigation. */
 }
 
 .nav-element a {
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
+    font-weight: bold;  /* Texte en gras pour les liens de navigation. */
+    text-decoration: none;  /* Supprime la décoration par défaut (souligné) des liens. */
+    color: white;  /* Couleur blanche pour le texte des liens. */
 }
 
-.icone-telephone {
+/* Icônes de téléphone et mail */
+.icone-telephone, .icone-mail {
+    width: 2rem;  /* Définit la taille des icônes à 2rem (relative à la taille de police). */
+}
+
+.icone-github {
     width: 2rem;
 }
-
-.icone-mail {
-    width: 2rem;
-}
-
+/* Style du header */
 header {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center;  /* Centre le texte du header. */
+    margin-bottom: 20px;  /* Ajoute une marge de 20px sous le header. */
 }
 
 header h1 {
-    margin: 0;
-    font-size: 28px;
-    color: #333;
+    margin: 0;  /* Supprime la marge par défaut autour du titre. */
+    font-size: 28px;  /* Taille de police plus grande pour le titre. */
+    color: #333;  /* Couleur gris foncé pour le texte. */
 }
 
+/* Titre des sections */
 .section-title {
-    font-size: 20px;
-    color: #333;
-    border-bottom: 2px solid #007BFF;
-    margin-bottom: 10px;
+    font-size: 20px;  /* Taille de police pour les titres de sections. */
+    color: #333;  /* Couleur gris foncé pour le texte. */
+    border-bottom: 2px solid #007BFF;  /* Ligne bleue sous chaque titre de section. */
+    margin-bottom: 10px;  /* Espace sous le titre de la section. */
 }
 
+/* Espacement des sections */
 .section {
-    margin-bottom: 20px;
+    margin-bottom: 20px;  /* Ajoute un espace de 20px sous chaque section. */
 }
 
+/* Liste des éléments */
 .list {
-    margin: 2rem;
-    padding: 0;
+    margin: 2rem;  /* Ajoute une marge de 2rem autour de la liste. */
+    padding: 0;  /* Supprime le padding de la liste. */
 }
 
 .list li {
-    margin-bottom: 10px;
+    margin-bottom: 10px;  /* Ajoute un espace de 10px entre les éléments de la liste. */
 }
 
 .list li span {
-    font-weight: bold;
+    font-weight: bold;  /* Met en gras les éléments span dans les listes (probablement pour les titres de sous-éléments). */
 }
 
+/* Media Query pour les écrans plus larges (tablettes et desktops) */
 @media (min-width: 1024px) {
-
+    /* Mise en page pour les écrans plus larges */
     .main-content {
-        display: grid;
-        grid-template-columns: 60% 40%;
-        grid-template-rows: 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        display: grid;  /* Affiche le contenu principal en grille. */
+        grid-template-columns: 60% 40%;  /* La première colonne occupe 60%, la deuxième 40%. */
+        grid-template-rows: 1fr;  /* Une seule ligne pour les éléments. */
+        grid-column-gap: 0px;  /* Pas d'espace entre les colonnes. */
+        grid-row-gap: 0px;  /* Pas d'espace entre les lignes. */
     }
-    
+
+    /* Section de contact sur les grands écrans */
     .contact {
-        padding: 0 5rem;
+        padding: 0 5rem;  /* Ajoute un padding de 5rem à gauche et à droite de la section contact. */
     }
 
     .contact-panel {
-        top: 15vh;
-        position: sticky;
+        top: 15vh;  /* Positionne la section contact à 15% de la hauteur de la fenêtre à partir du haut. */
+        position: sticky;  /* La section contact reste en place en défilant. */
     }
 
+    /* Adaptation de la navigation pour les grands écrans */
     nav {
-        display: flex;
-        background-color: #003064;
-        width: 100vw;
-        height: 14vh;
-        justify-content: center;
         gap: 15%;
-        align-items: center;
     }
 
     .nav-element {
-        font-size: x-large;
-    }
-    
-    .nav-element a {
-        font-weight: bold;
-        text-decoration: none;
-        color: white;
-    }
-    
-    .nav-element a:hover {
-        color: orange;
+        font-size: x-large;  /* Augmente la taille de la police des éléments de navigation. */
     }
 
+    /* Effet de survol pour les liens de navigation */
+    .nav-element a:hover {
+        color: orange; 
+    }
+
+    /* Conteneur central plus large sur les grands écrans */
     .container {
         width: 70%;
     }
 
+    /* Titre du header plus grand sur les grands écrans */
     header h1 {
         font-size: 36px;
     }
 
+    /* Paragraphe du header plus grand sur les grands écrans */
     header p {
         font-size: 20px;
     }
 
+    /* Titres de section plus grands */
     .section-title {
         font-size: 24px;
     }
 
+    /* Taille de police des éléments de la liste plus grande */
     .list li {
         font-size: 16px;
     }
 }
+
