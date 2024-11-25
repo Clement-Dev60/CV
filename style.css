@@ -63,6 +63,11 @@ nav {
 .icone-github {
     width: 2rem;
 }
+
+.icone-home {
+    width: 2rem;
+}
+
 /* Style du header */
 header {
     text-align: center;  /* Centre le texte du header. */
